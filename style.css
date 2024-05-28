@@ -9,10 +9,35 @@ body{
     color: #8624d6;
 }
 
+h1, h2{
+    color: #b8b8b8;
+    font-family: "Arimo";
+}
+
+strong, p{
+    font-family: "poppins";
+}
+
 header{
-    margin: 4em;
+    color: #8624d6;
+    margin: 2em;
     border: solid 2px #246bd6;
-    padding: 0.5em;
-    border-radius: 0.4em;
-    
+    padding: 2.5em;
+    border-radius: 0.4em; 
+}
+
+hr{
+    border-color: #8624d6;
+    box-shadow: 0 0.3rem 0.7rem;
+    margin: 0.7rem;
+    color: #8624d6;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    color: #466bbb;
+    padding: 0.2rem;
 }
