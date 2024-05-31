@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: content-box;
+    font-family: "poppins";
 }
 
 body{
@@ -21,9 +22,16 @@ strong, p{
 header{
     color: #8624d6;
     margin: 2em;
-    border: solid 2px #246bd6;
+    border: solid 0.15rem #246bd6;
     padding: 2.5em;
     border-radius: 0.4em; 
+}
+
+section{
+    margin: 0.8rem;
+    background-color: #1c1c1c;
+    border-radius: 1rem;
+    padding: 2rem;
 }
 
 hr{
@@ -40,4 +48,21 @@ h2{
 p{
     color: #466bbb;
     padding: 0.2rem;
+}
+div > p{
+    text-align: center;
+}
+
+button{
+    background-color: #010108;
+    color: #efefef;
+    border: solid 0.15rem #466bbb;
+    border-radius: 1.9rem;
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+    display: flex;
+    align-items: center;
+}
+.material-symbols-outlined{
+    color: #246bd6;
 }
