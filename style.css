@@ -63,7 +63,29 @@ button{
     display: flex;
     align-items: center;
 }
+button:hover{
+    padding-right: 0.8rem;
+    border-color: #246bd6;
+}
+
+button:hover > .material-symbols-outlined{
+    margin-left: 1rem;
+}
 .material-symbols-outlined{
+    color: #246bd6;
+}
+
+.enlace{
+    color: #8624d6;
+    text-decoration: none;
+    background-color: #010108;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+}
+.enlace:hover{
+    padding: 0.15rem;
+    margin: 0.1rem;
+    border: solid 0.15rem #8624d6;
     color: #246bd6;
 }
 
@@ -72,12 +94,19 @@ footer{
     justify-content: space-around;
     padding-bottom: 0.5rem;
 }
-.socialMediaImg{
+.socialmedia-img{
     width: 1rem;
     height: 1rem;
     background-color: #1c1c1c;
     padding: 0.4rem;
+    margin: 0.5rem;
     border-radius: 1rem;
+}
+.socialmedia-img:hover{
+    background-color: #383838;
+    padding: 0.3rem;
+    width: 1.2rem;
+    height: 1.2rem;
 }
 #mail-icon{
     color: #010108;
@@ -85,6 +114,10 @@ footer{
     border-radius: 1rem;
     font-size: 1.2rem;
     padding: 0.3rem;
+    margin: 0.5rem;
 }
-
-/*Animaciones*/
+#mail-icon:hover{
+    background-color: #383838;
+    padding: 0.2rem;
+    font-size: 1.4rem;
+}
