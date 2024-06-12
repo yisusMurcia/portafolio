@@ -16,20 +16,25 @@ const abrirFuturosProyectos=()=>{//Crear ventana emergente
         sectionContainer.innerHTML += `<li>${futurosProyectos[i]}</li>`;
     }
     sectionContainer.innerHTML += `<ul>
-    <button id= "boton-cerrar">cerrar</button>`;
+    <br>
+    <p>Toca aquí para cerrarlo</p>`;
+
     mainEl.appendChild(sectionContainer);
-}
+    
+    document.addEventListener("click", (e)=>{
+        const el = e.target;
+        if (el == sectionContainer){
+            sectionContainer.remove();
+        }
+    })
+    
+    }
 
 
 
 //Obtener botones
 const botonFuturosProyectos = document.getElementById("futuros-proyectos");
-const botonCerrar = document.getElementById("boton-cerrar");
+
 
 //Añadir eventos de los botones
 botonFuturosProyectos.addEventListener("click", ()=>{abrirFuturosProyectos()});
-if (!botonCerrar){
-    botonCerrar.addEventListener("click", ()=>{
-        
-    })
-}
