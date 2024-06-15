@@ -76,6 +76,18 @@ button:hover > .material-symbols-outlined{
     color: #246bd6;
 }
 
+
+#lenguajes-de-programacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.lenguaje-de-programacion{
+    height: 3rem;
+    border-radius: 0.5rem;
+}
+
 .enlace{
     color: #8624d6;
     text-decoration: none;
