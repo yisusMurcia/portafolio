@@ -1,6 +1,8 @@
 const futurosProyectos = [
     "Triqui",
-    "Conecta 4"
+    "Conecta 4",
+    "calculadora",
+    "convertidor de medidas"
 ];
 
 const abrirFuturosProyectos=()=>{//Crear ventana emergente
@@ -12,7 +14,7 @@ const abrirFuturosProyectos=()=>{//Crear ventana emergente
     sectionContainer.innerHTML = `
     <h2>Futuros Proyectos</h2>
     <ul>`;
-    for(let i= 0; i < 3; i++){
+    for(let i= 0; i < futurosProyectos.length; i++){
         sectionContainer.innerHTML += `<li>${futurosProyectos[i]}</li>`;
     }
     sectionContainer.innerHTML += `<ul>
