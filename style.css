@@ -84,8 +84,9 @@ button:hover > .material-symbols-outlined{
     padding: 1rem;
 }
 .lenguaje-de-programacion{
-    height: 3rem;
+    height: 3.4rem;
     border-radius: 0.5rem;
+    padding: 0.2rem;
 }
 
 .enlace{
@@ -110,7 +111,7 @@ footer{
 .socialmedia-img{
     width: 2rem;
     height: 2rem;
-    background-color: #1c1c1c;
+    background-color: #3f3f3f;
     padding: 0.4rem;
     margin: 0.5rem;
     border-radius: 1rem;
@@ -123,7 +124,7 @@ footer{
 }
 #mail-icon{
     color: #010108;
-    background-color: #1c1c1c;
+    background-color: #3f3f3f;
     border-radius: 1rem;
     font-size: 1.4rem;
     padding: 0.3rem;
@@ -137,13 +138,13 @@ footer{
 
 .emergente{
     position: fixed;
-    width: 80vw;
-    height: 80vh;
+    width: 50vw;
+    height: 40vh;
     background-color: #1c1c1c;
     border: solid 0.2rem #246bd6;
     border-radius: 1rem;
     top: 0;
     left: 0;
-    margin: 10vw;
+    margin: 30vh 25vw;
     padding: 0.44rem;
 }

@@ -18,14 +18,13 @@ const abrirFuturosProyectos=()=>{//Crear ventana emergente
         sectionContainer.innerHTML += `<li>${futurosProyectos[i]}</li>`;
     }
     sectionContainer.innerHTML += `<ul>
-    <br>
-    <p>Toca aquí para cerrarlo</p>`;
+    <br>`;
 
     mainEl.appendChild(sectionContainer);
     
     document.addEventListener("click", (e)=>{
         const el = e.target;
-        if (el == sectionContainer){
+        if (el != sectionContainer && el != botonFuturosProyectos){
             sectionContainer.remove();
         }
     })
