@@ -27,6 +27,10 @@ header{
     border-radius: 0.4em; 
 }
 
+header > strong{
+    float: none;
+}
+
 section{
     margin: 0.8rem;
     background-color: #1c1c1c;
@@ -101,6 +105,18 @@ button:hover > .material-symbols-outlined{
     margin: 0.1rem;
     border: solid 0.15rem #8624d6;
     color: #246bd6;
+}
+
+#foto-perfil{
+    width: 25vw;
+    height: 25vw;
+    max-width: 8rem;
+    max-height: 8rem;
+    float: right;
+    background-color: #1c1c1c;
+    border-radius: 15%;
+    border: solid 0.125rem #466bbb;
+    margin: 0.2rem;
 }
 
 footer{
