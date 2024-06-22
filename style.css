@@ -113,9 +113,9 @@ button:hover > .material-symbols-outlined{
     max-width: 8rem;
     max-height: 8rem;
     float: right;
-    background-color: #246bd657;
-    border-radius: 15%;
-    margin: 0.2rem;
+    border-radius: 10%;
+    margin: 0.8rem;
+    border: solid 0.18rem #1c1c1c;
 }
 
 #correo{
