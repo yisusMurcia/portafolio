@@ -35,7 +35,8 @@ const abrirFuturosProyectos=()=>{//Crear ventana emergente
 
 //Obtener botones
 const botonFuturosProyectos = document.getElementById("futuros-proyectos");
-
+const botonObtenerCorreo = document.getElementById("boton-copiar-correo");
 
 //Añadir eventos de los botones
 botonFuturosProyectos.addEventListener("click", ()=>{abrirFuturosProyectos()});
+botonObtenerCorreo.addEventListener("click", ()=>{navigator.clipboard.writeText("yisusmurci@gmail.com")})

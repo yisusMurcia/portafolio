@@ -113,10 +113,35 @@ button:hover > .material-symbols-outlined{
     max-width: 8rem;
     max-height: 8rem;
     float: right;
-    background-color: #1c1c1c;
+    background-color: #246bd657;
     border-radius: 15%;
-    border: solid 0.125rem #466bbb;
     margin: 0.2rem;
+}
+
+#correo{
+    display: grid;
+    max-width: 500px;
+    margin: 0.5rem  auto;
+    grid-template-columns: 1fr 3fr 3fr;
+    background-color: #1c1c1c;
+    border-radius: 3rem;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1rem;
+}
+#correo> p{
+    color: #efefef;
+}
+#correo > button{
+    margin: 0;
+    justify-content: center;
+    border: none;
+    border-radius: 0;
+    background-color: #1c1c1c;
+}
+#correo> button:hover .material-symbols-outlined{
+    color: #8624d6;
 }
 
 footer{
