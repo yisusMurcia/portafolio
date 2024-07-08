@@ -5,6 +5,17 @@
     font-family: "poppins";
 }
 
+::-webkit-scrollbar{
+    background-color: #1c1c1c;
+    width: 0.4em;
+    height: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #383838;
+    border-radius: 5px;
+}
+
 body{
     background-color: #010108;
     color: #8624d6;
@@ -129,10 +140,11 @@ button:hover > .material-symbols-outlined{
     justify-content: center;
     align-items: center;
     padding: 0.1rem;
+    overflow:auto;
 }
 #correo> p{
     color: #efefef;
-    font-size: 3vw;
+    font-size: 0.8rem;
     text-align: center;
 }
 #correo > button{
