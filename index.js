@@ -11,8 +11,7 @@ const abrirFuturosProyectos=()=>{//Crear ventana emergente
     const sectionContainer = document.createElement("section");
     sectionContainer.classList.add("emergente");
 
-    sectionContainer.innerHTML = `
-    <h2>Futuros Proyectos</h2>
+    sectionContainer.innerHTML = `<h2>Futuros Proyectos</h2>
     <ul>`;
     for(let i= 0; i < futurosProyectos.length; i++){
         sectionContainer.innerHTML += `<li>${futurosProyectos[i]}</li>`;
@@ -24,12 +23,12 @@ const abrirFuturosProyectos=()=>{//Crear ventana emergente
     
     document.addEventListener("click", (e)=>{
         const el = e.target;
-        if (el != sectionContainer && el != botonFuturosProyectos){
+        if (el != sectionContainer && el != botonFuturosProyectos){//Cerrar la ventana al clickear otro elemento
             sectionContainer.remove();
         }
     })
     
-    }
+}
 
 
 

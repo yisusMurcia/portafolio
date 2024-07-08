@@ -132,6 +132,8 @@ button:hover > .material-symbols-outlined{
 }
 #correo> p{
     color: #efefef;
+    font-size: 3vw;
+    text-align: center;
 }
 #correo > button{
     margin: 0;
