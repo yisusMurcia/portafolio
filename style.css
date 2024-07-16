@@ -69,6 +69,16 @@ div > p{
     text-align: center;
 }
 
+a{
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: #efefef;
+}
+a:hover{
+    background-color: #010108;
+    color: #b8b8b8;
+}
+
 button{
     background-color: #010108;
     color: #efefef;
@@ -190,6 +200,44 @@ footer{
     padding: 0.2rem;
     font-size: 1.8rem;
 }
+.contenedor-proyectos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+.proyecto{
+    background-position: center;
+    background-size: contain;
+    border-radius: 1rem;
+    padding: 0.4rem;
+    height: 8rem;
+    overflow: scroll;
+}
+.proyecto > h3{
+    text-align: center;
+    background-color: #050505d3;
+    border-radius: 0.1rem;
+ 
+}
+.contenedor-tecnologias hr, .proyecto p{
+    background-color: #b8b8b8a9;
+    color: #466bbb;
+    margin: 0.2rem;
+    border-radius: 0.4rem;
+}
+.contenedor-tecnologias{
+    text-align: center;
+    background-color: #b8b8b8a9;
+    border-radius: 0.2rem;
+}
+.contenedor-proyectos a{
+    background-color: #1c1c1c;
+    border: solid 0.12rem #246bd6;
+    padding: 0.12rem;
+    margin: 30%;
+}
 
 .emergente{
     position: fixed;
@@ -202,4 +250,10 @@ footer{
     left: 0;
     margin: 30vh 25vw;
     padding: 0.44rem;
+}
+
+@media (width < 500px) {
+    .contenedor-proyectos{
+        grid-template-columns: 1fr;
+    }
 }
