@@ -18,35 +18,67 @@
 
 body{
     background-color: #010108;
-    color: #8624d6;
+    color: #b8b8b8;
+}
+header{
+    padding: 0.5rem;
 }
 
 h1, h2{
     color: #b8b8b8;
     font-family: "Arimo";
+    text-align: center;
 }
 
-strong, p{
-    font-family: "poppins";
-}
 
-header{
-    color: #8624d6;
-    margin: 2em;
-    border: solid 0.15rem #246bd6;
-    padding: 2.5em;
-    border-radius: 0.4em; 
-}
-
-header > strong{
-    float: none;
+#foto-perfil{
+    display: block;
+    width: 25vw;
+    height: 25vw;
+    max-width: 8rem;
+    max-height: 8rem;
+    border-radius: 50%;
+    margin: 0.8rem auto;
+    box-shadow: 0 0 10px #246bd6;
 }
 
 section{
     margin: 0.8rem;
-    background-color: #1c1c1c;
-    border-radius: 1rem;
-    padding: 2rem;
+}
+
+#correo{
+    display: flex;
+    max-width: 500px;
+    margin: 0.5rem  auto;
+    border-radius: 3em;
+    box-shadow: 0 0 10px #8624d6;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+}
+#correo:hover{
+    animation: change-to-blue 3s linear 1;
+    box-shadow: 0 0 10px #246bd6;
+}
+#correo> p{
+    color: #efefef;
+    font-size: 0.8rem;
+    text-align: center;
+}
+#correo button{
+    margin: 0;
+    justify-content: center;
+    border: none;
+    border-radius: 0;
+}
+#correo button:hover .material-symbols-outlined{
+    color: #8624d6;
+    margin: 0;
+}
+
+#correo div{
+    display: flex;
 }
 
 hr{
@@ -56,13 +88,7 @@ hr{
     color: #8624d6;
 }
 
-h2{
-    text-align: center;
-}
-
 p{
-    color: #466bbb;
-    padding: 0.2rem;
     text-align: justify;
 }
 div > p{
@@ -75,7 +101,7 @@ a{
     color: #efefef;
 }
 a:hover{
-    background-color: #010108;
+    background-color: #1c1c1c;
     color: #b8b8b8;
 }
 
@@ -89,10 +115,6 @@ button{
     display: flex;
     align-items: center;
 }
-button:hover{
-    padding-right: 0.8rem;
-    border-color: #246bd6;
-}
 
 button:hover > .material-symbols-outlined{
     margin-left: 1rem;
@@ -101,17 +123,26 @@ button:hover > .material-symbols-outlined{
     color: #246bd6;
 }
 
-
-#lenguajes-de-programacion{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem;
+#description{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    gap: 0.8rem;
+    align-content: center;
+    justify-content: center;
+    grid-template-areas:
+    "side-image any"
+    "side-image  any";
 }
-.lenguaje-de-programacion{
-    height: 3.4rem;
-    border-radius: 0.5rem;
-    padding: 0.2rem;
+
+#descrpition :not(#side-image){
+    grid-area: any;
+}
+
+#side-image{
+    width: 100%;
+    border-radius: 2em;
+    grid-area: side-image;
 }
 
 .enlace{
@@ -128,50 +159,11 @@ button:hover > .material-symbols-outlined{
     color: #246bd6;
 }
 
-#foto-perfil{
-    width: 25vw;
-    height: 25vw;
-    max-width: 8rem;
-    max-height: 8rem;
-    float: right;
-    border-radius: 10%;
-    margin: 0.8rem;
-    border: solid 0.18rem #1c1c1c;
-}
-
-#correo{
-    display: grid;
-    max-width: 500px;
-    margin: 0.5rem  auto;
-    grid-template-columns: 1fr 3fr 3fr;
-    background-color: #1c1c1c;
-    border-radius: 3rem;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    padding: 0.1rem;
-    overflow:auto;
-}
-#correo> p{
-    color: #efefef;
-    font-size: 0.8rem;
-    text-align: center;
-}
-#correo > button{
-    margin: 0;
-    justify-content: center;
-    border: none;
-    border-radius: 0;
-    background-color: #1c1c1c;
-}
-#correo> button:hover .material-symbols-outlined{
-    color: #8624d6;
-}
-
-footer{
+aside{
     display: flex;
     justify-content: space-around;
-    padding-bottom: 0.5rem;
+    align-items: center;
+
 }
 .socialmedia-img{
     width: 2rem;
@@ -181,12 +173,6 @@ footer{
     margin: 0.5rem;
     border-radius: 1rem;
 }
-.socialmedia-img:hover{
-    background-color: #383838;
-    padding: 0.3rem;
-    width: 2.2rem;
-    height: 2.2rem;
-}
 #mail-icon{
     color: #010108;
     background-color: #3f3f3f;
@@ -194,11 +180,6 @@ footer{
     font-size: 1.4rem;
     padding: 0.3rem;
     margin: 0.5rem;
-}
-#mail-icon:hover{
-    background-color: #383838;
-    padding: 0.2rem;
-    font-size: 1.8rem;
 }
 .contenedor-proyectos{
     display: grid;
@@ -252,7 +233,23 @@ footer{
     padding: 0.44rem;
 }
 
+@keyframes change-to-blue {
+    10%{
+        box-shadow: 0 0 10px #8624d6;
+    }
+    50%{
+        box-shadow: 0 0 10px #246bd6;
+    }
+}
+
 @media (width < 500px) {
+    #description{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "side-image"
+        "any"
+        "any";
+    }
     .contenedor-proyectos{
         grid-template-columns: 1fr;
     }

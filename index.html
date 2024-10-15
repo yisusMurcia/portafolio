@@ -5,7 +5,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/logo.png">
-    <title>Portafolio</title>
+
+    <title>Mi portafolio</title>
+    <meta name="title" content="Mi portafolio">
+    <meta name="description" content="La página donde subo lo que programo">
+    <!-- <link rel="image_src" href=""> -->
     <!--Fuentres-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -19,32 +23,43 @@
 </head>
 <body>
     <header>
-        <h1>¡Bienvenido!</h1><br>
         <img src="img/yisus.png" alt="Foto de Jesús Antonio Murcia" id="foto-perfil">
-        <strong>Soy Jesús Antonio Murcia Guzmán</strong><br><br>
-        <p>
-            Apasionado y dedicado a la programación, obsesionado con ser su mejor versión, mi miedo más grande
-            tener una vida monotona y aburrida
-        </p>
-        <span id="correo">
+        <br>
+        <h1>Soy Jesús Antonio Murcia Guzmán</h1><br><br>
+        <nav id="correo">
             <p>yisusmurci@gmail.com</p>
-            <button>
-                <a href="mailto:yisusMurci@gmail.com">
-                    <span class="material-symbols-outlined">mail</span>
-                </a>
-            </button>
-            <button id="boton-copiar-correo">
-                <span class="material-symbols-outlined">content_copy</span>
-            </button>
-        </span>
+            <div>
+                <button>
+                    <a href="mailto:yisusMurci@gmail.com">
+                        <span class="material-symbols-outlined">mail</span>
+                    </a>
+                </button>
+                <button id="boton-copiar-correo">
+                    <span class="material-symbols-outlined">content_copy</span>
+                </button>
+            </div>
+        </nav>
     </header>
     <main>
-        <section id="lenguajes-de-programacion">
-            <img src="img/html.png" alt="HTML" class="lenguaje-de-programacion">
-            <img src="img/css.png" alt="CSS" class="lenguaje-de-programacion">
-            <img src="img/javascript.png" alt="Javascript" class="lenguaje-de-programacion">
-            <img class="lenguaje-de-programacion" src="img/c++.png" alt="C++">
-            <img class="lenguaje-de-programacion" src="img/python.png" alt="python">
+        <section id="description">
+            <img src="img/side-image.jpg" alt="yo" id="side-image">
+            <p>
+                Apasionado y dedicado a la programación, obsesionado con ser su mejor versión, mi miedo más grande
+                tener una vida monotona y aburrida
+            </p>
+            <aside>
+                <a href="https://twitter.com/yisusMurcia" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/800px-X_logo_2023.svg.png" alt="x" class="socialmedia-img">
+                </a>
+                <a href="https://github.com/yisusMurcia" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/800px-GitHub_Invertocat_Logo.svg.png" alt="GitHub" class="socialmedia-img">
+                </a>
+                <a href="mailto:yisusMurci@gmail.com">
+                    <span class="material-symbols-outlined" id="mail-icon">
+                        alternate_email
+                        </span>
+                </a>
+            </aside>
         </section>
         <hr>
         <section>
@@ -59,17 +74,7 @@
     </main>
     <hr>
     <footer>
-        <a href="https://twitter.com/yisusMurcia" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/800px-X_logo_2023.svg.png" alt="x" class="socialmedia-img">
-        </a>
-        <a href="https://github.com/yisusMurcia" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/800px-GitHub_Invertocat_Logo.svg.png" alt="GitHub" class="socialmedia-img">
-        </a>
-        <a href="mailto:yisusMurci@gmail.com">
-            <span class="material-symbols-outlined" id="mail-icon">
-                alternate_email
-                </span>
-        </a>
+        
     </footer>
     <script src="index.js"></script>
 </body>
