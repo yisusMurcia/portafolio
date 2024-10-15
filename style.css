@@ -58,7 +58,7 @@ section{
     padding: 0.2rem;
 }
 #correo:hover{
-    animation: change-to-blue 3s linear 1;
+    animation: change-to-blue 1s ease 1;
     box-shadow: 0 0 10px #246bd6;
 }
 #correo> p{
@@ -128,7 +128,7 @@ button:hover > .material-symbols-outlined{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 3fr 1fr;
     gap: 0.8rem;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     grid-template-areas:
     "side-image any"
