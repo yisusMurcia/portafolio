@@ -186,13 +186,13 @@ aside{
 }
 .proyecto{
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     border-radius: 1rem;
     padding: 0.4rem;
     max-width: 850px;
 }
 .proyecto > *{
-    background-color: #070707e7;
+    background-color: #1c1c1cdc;
     margin: 0.4rem;
     border-radius: 0.15em;
     text-align: center;

@@ -6,13 +6,25 @@ const futurosProyectos = [
     "convertidor de medidas"
 ];
 
+// Proyectos mostrados en la pantalla
 const proyectos = [
     {
         titulo: "Triqui",
-        tecnologias: ["python"],
         enlace: "https://github.com/yisusMurcia/triqui",
-        descripcion: "Un código para jugar el famoso juego de triqui o tres en raya, ya sea para jugar con otra persona o contra el algoritmo.",
-        img : 'triqui.png'
+        descripcion: "Un código para jugar el famoso juego de triqui o tres en raya, ya sea para jugar con otra persona o contra el algoritmo.", 
+    },
+    {
+        titulo: "Menu",
+        descripcion: "Un app para crear y editar un menu de comida",
+        enlace: "https://github.com/yisusMurcia/menu",
+    },
+    {
+        titulo: "Playlist",
+        descripcion: "Un programa para crear y editar una playlist de musica",
+        enlace: "https://github.com/yisusMurcia/playlist",
+    },
+    {
+        
     }
 ]
 
@@ -21,17 +33,19 @@ for (const proyecto of proyectos) {
     const tarjetaProyecto = document.createElement("div");
 
     tarjetaProyecto.classList.add("proyecto");
-
-    tarjetaProyecto.style.backgroundImage = `url(img/proyectos/${proyecto.img})`
+    tarjetaProyecto.style.backgroundImage = proyecto?.img? `url(img/proyectos/${proyecto.img})`: `url(img/proyectos/default.jpg)`;
     
-    contenedorProyectos.appendChild(tarjetaProyecto)
-
+    
     //Llenar la tarjeta
     tarjetaProyecto.innerHTML= `<h3>${proyecto.titulo}</h3>
-    <div class="contenedor-tecnologias"> ${proyecto.tecnologias.join("<hr>")}</div>
-    <p>${proyecto.descripcion}</p>
-    <a href="${proyecto.enlace}">Código</a>`
-
+    <hr>
+    <p>${proyecto.descripcion}</p>`;
+    
+    tarjetaProyecto.addEventListener("click", ()=>{
+        window.open(proyecto.enlace, "_blank");
+    })
+    
+    contenedorProyectos.appendChild(tarjetaProyecto)
 }
 
 const abrirFuturosProyectos=()=>{//Crear ventana emergente
