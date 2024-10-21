@@ -46,8 +46,13 @@ section{
     margin: 0.8rem;
 }
 
-#correo{
+nav{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#correo{
     max-width: 500px;
     margin: 0.5rem  auto;
     border-radius: 3em;
@@ -89,8 +94,7 @@ hr{
 }
 
 p{
-    text-align: justify;
-    font-family: 'poppins';
+    text-wrap: balance;
 }
 
 a{
@@ -128,20 +132,13 @@ button:hover > .material-symbols-outlined{
     gap: 0.8rem;
     align-items: center;
     justify-items: center;
-    grid-template-areas:
-    "side-image any"
-    "side-image  any";
 }
 
-#descrpition :not(#side-image){
-    grid-area: any;
-}
 
 #side-image{
     width: 100%;
-    max-width: 500px;
-    border-radius: 2em;
-    grid-area: side-image;
+    max-width: 400px;
+    border-radius: 2rem;
 }
 
 .enlace{
@@ -158,13 +155,6 @@ button:hover > .material-symbols-outlined{
     color: #246bd6;
 }
 
-aside{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
 #mail-icon, .fa-brands{
     color: #010108;
     background-color: #3f3f3f;
@@ -175,30 +165,29 @@ aside{
 }
 .contenedor-proyectos{
     display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 0.3rem;
+    align-content: center;
+    justify-content: center;
 }
 .proyecto{
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius: 1rem;
     padding: 0.4rem;
-    margin: 0.4rem auto;
-    max-width: 900px;
+    margin: 0.4rem;
     align-items: center;
-    gap: 0.8rem;
-}
-.proyecto > *:not(img){
-    grid-column: 2;
-    text-align: center;
 }
 .proyecto img{
     width: 100%;
     border-radius: 0.8rem;
 }
 
-.proyecto  p{
+.proyecto  p, h3{
+    margin: 0.7rem;
+}
+
+.proyecto p{
     font-size: 0.9rem;
 }
 
