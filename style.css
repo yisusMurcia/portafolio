@@ -127,7 +127,7 @@ button:hover > .material-symbols-outlined{
     grid-template-rows: 3fr 1fr;
     gap: 0.8rem;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
     grid-template-areas:
     "side-image any"
     "side-image  any";
@@ -139,6 +139,7 @@ button:hover > .material-symbols-outlined{
 
 #side-image{
     width: 100%;
+    max-width: 500px;
     border-radius: 2em;
     grid-area: side-image;
 }
