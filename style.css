@@ -90,6 +90,7 @@ hr{
 
 p{
     text-align: justify;
+    font-family: 'poppins';
 }
 
 a{
@@ -162,15 +163,8 @@ aside{
     align-items: center;
 
 }
-.socialmedia-img{
-    width: 2rem;
-    height: 2rem;
-    background-color: #3f3f3f;
-    padding: 0.4rem;
-    margin: 0.5rem;
-    border-radius: 1rem;
-}
-#mail-icon{
+
+#mail-icon, .fa-brands{
     color: #010108;
     background-color: #3f3f3f;
     border-radius: 1rem;
@@ -185,36 +179,33 @@ aside{
     gap: 0.3rem;
 }
 .proyecto{
-    background-position: center;
-    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     border-radius: 1rem;
     padding: 0.4rem;
-    max-width: 850px;
+    margin: 0.4rem auto;
+    max-width: 600px;
+    align-items: center;
+    gap: 0.8rem;
 }
-.proyecto > *{
-    background-color: #1c1c1cdc;
-    margin: 0.4rem;
-    border-radius: 0.15em;
+.proyecto > *:not(img){
+    grid-column: 2;
     text-align: center;
+}
+.proyecto img{
+    width: 100%;
+    border-radius: 0.8rem;
+}
+
+.proyecto  p{
+    font-size: 0.9rem;
 }
 
 .proyecto:hover{
-    border: solid 0.2rem #466bbb;
     padding: 0.2rem;
+    background-color: #1c1c1cb0;
 }
 
-.emergente{
-    position: fixed;
-    width: 50vw;
-    height: 40vh;
-    background-color: #1c1c1c;
-    border: solid 0.2rem #246bd6;
-    border-radius: 1rem;
-    top: 0;
-    left: 0;
-    margin: 30vh 25vw;
-    padding: 0.44rem;
-}
 
 @keyframes change-to-blue {
     10%{
@@ -228,10 +219,9 @@ aside{
 @media (width < 500px) {
     #description{
         margin: 0.1rem;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "side-image"
-        "any"
-        "any";
+        display: flex;
+        flex-direction: column;
+        padding: 0.3rem;
     }
+
 }
