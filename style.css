@@ -103,7 +103,7 @@ a{
     color: #efefef;
 }
 a:hover{
-    background-color: #1c1c1c;
+    background-color: #b63030;
     color: #b8b8b8;
 }
 
@@ -127,16 +127,16 @@ button:hover > .material-symbols-outlined{
 
 #description{
     display: grid;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 0.8rem;
     align-items: center;
     justify-items: center;
 }
 
-
 #side-image{
     width: 100%;
-    max-width: 400px;
     border-radius: 2rem;
 }
 
@@ -162,6 +162,7 @@ button:hover > .material-symbols-outlined{
     padding: 0.3rem;
     margin: 0.5rem;
 }
+
 .contenedor-proyectos{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
