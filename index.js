@@ -22,6 +22,12 @@ const proyectos = [
         enlace: "https://github.com/yisusMurcia/playlist",
         img: "playlist.png"
     },
+    {
+        titulo: "Pinta cuadrados",
+        descripcion: "Un programa para pintar cuadrados de dimensiones aleatorias al hacer click en alguna parte de la ventana",
+        enlace: "https://github.com/yisusMurcia/dibujoDeCuadros",
+        img: "cuadros.png"
+    }
 ]
 
 //Mostrar proyectos
