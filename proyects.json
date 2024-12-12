@@ -1,6 +1,12 @@
 {
     "proyectos": [
         {
+            "titulo": "Frases",
+            "descripcion": "Un proyecto en react que tras iniciar sesión, muestra frases de diferentes autores",
+            "enlace": "https://yisusmurcia.github.io/quotes-pages/", 
+            "img": "quotes-pages.png"
+        },
+        {
             "titulo": "Pinta cuadrados",
             "descripcion": "Un programa para pintar cuadrados de dimensiones aleatorias al hacer click en alguna parte de la ventana",
             "enlace": "https://github.com/yisusMurcia/dibujoDeCuadros",
