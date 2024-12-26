@@ -194,6 +194,22 @@ button{
     background-color: #1c1c1cb0;
 }
 
+#habilidades-blandas{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#habilidades-blandas > li{
+    margin: 0.3rem;
+    background-color: #8624d623;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
 
 @keyframes change-to-blue {
     10%{
