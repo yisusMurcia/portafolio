@@ -1,6 +1,12 @@
 {
     "proyectos": [
         {
+            "titulo": "Concesionario",
+            "descripcion": "Un proyecto en Java que simula un concesionario de carros se podrá crear y visualizar modelos de carros",
+            "enlace": "https://github.com/yisusMurcia/concesionario",
+            "img": "concesionario.png"
+        },
+        {
             "titulo": "Frases",
             "descripcion": "Un proyecto en react que tras iniciar sesión, muestra frases de diferentes autores",
             "enlace": "https://yisusmurcia.github.io/quotes-pages/", 
