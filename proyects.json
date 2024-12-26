@@ -4,37 +4,43 @@
             "titulo": "Concesionario",
             "descripcion": "Un proyecto en Java que simula un concesionario de carros se podrá crear y visualizar modelos de carros",
             "enlace": "https://github.com/yisusMurcia/concesionario",
-            "img": "concesionario.png"
+            "img": "concesionario.png",
+            "tecnologias": ["Java"]
         },
         {
             "titulo": "Frases",
             "descripcion": "Un proyecto en react que tras iniciar sesión, muestra frases de diferentes autores",
             "enlace": "https://yisusmurcia.github.io/quotes-pages/", 
-            "img": "quotes-pages.png"
+            "img": "quotes-pages.png",
+            "tecnologias": ["React"]
         },
         {
             "titulo": "Pinta cuadrados",
             "descripcion": "Un programa para pintar cuadrados de dimensiones aleatorias al hacer click en alguna parte de la ventana",
             "enlace": "https://github.com/yisusMurcia/dibujoDeCuadros",
-            "img": "cuadros.png"
+            "img": "cuadros.png",
+            "tecnologias": ["Java"]
         },
         {
             "titulo": "Triqui",
             "enlace": "https://github.com/yisusMurcia/triqui",
             "descripcion": "Un código para jugar el famoso juego de triqui o tres en raya, ya sea para jugar con otra persona o contra el algoritmo.", 
-            "img": "triqui.png"
+            "img": "triqui.png",
+            "tecnologias": ["Python"]
         },
         {
             "titulo": "Menu",
             "descripcion": "Un app para crear y editar un menu de comida",
             "enlace": "https://github.com/yisusMurcia/menu",
-            "img": "menu.png"
+            "img": "menu.png",
+            "tecnologias": ["Java"]
         },
         {
             "titulo": "Playlist",
             "descripcion": "Un programa para crear y editar una playlist de musica",
             "enlace": "https://github.com/yisusMurcia/playlist",
-            "img": "playlist.png"
+            "img": "playlist.png",
+            "tecnologias": ["Java"]
         }
     ]
 }

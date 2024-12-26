@@ -2,6 +2,25 @@ const contenedorProyectos = document.getElementsByClassName("contenedor-proyecto
 const botonObtenerCorreo = document.getElementById("boton-copiar-correo");
 
 
+const addIcons =(tecnologias)=>{
+    const divEl = document.createElement("div");
+    divEl.classList.add("tecnologias");
+    for(let tecnologia of tecnologias){
+        switch(tecnologia){
+            case "React":
+                divEl.innerHTML+= `<i class="fa-brands fa-react"></i>`;
+                break;
+            case "Java":
+                divEl.innerHTML+= `<i class="fa-brands fa-java"></i>`;
+                break;
+            case "Python":
+                divEl.innerHTML+= `<i class="fa-brands fa-python"></i>`;
+                break;
+        }
+    }
+    return divEl.innerHTML;
+}
+
 const displayProjects= async ()=>{//Obtener proyectos
     try{
         const response = await fetch("proyects.json")
@@ -25,6 +44,7 @@ const displayProjects= async ()=>{//Obtener proyectos
                     <h3>${proyecto.titulo}</h3>
                     <hr>
                     <p>${proyecto.descripcion}</p>
+                    ${proyecto?.tecnologias? addIcons(proyecto.tecnologias): ""}
                 </span>`;
                 
                 tarjetaProyecto.addEventListener("click", ()=>{

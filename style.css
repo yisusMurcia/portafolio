@@ -154,7 +154,7 @@ button{
 }
 
 #mail-icon, .fa-brands, .fa-solid{
-    color: #010108;
+    color: #b8b8b8;
     background-color: #3f3f3f;
     border-radius: 1rem;
     font-size: 1.4rem;
@@ -204,11 +204,18 @@ button{
 }
 
 #habilidades-blandas > li{
-    margin: 0.3rem;
+    margin: 0.4rem;
     background-color: #8624d623;
     padding: 0.5rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
+
+.tecnologias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 
 
 @keyframes change-to-blue {
