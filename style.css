@@ -160,6 +160,9 @@ button{
     font-size: 1.4rem;
     padding: 0.3rem;
     margin: 0.5rem;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
 }
 
 .contenedor-proyectos{
