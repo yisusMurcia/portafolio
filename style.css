@@ -46,7 +46,7 @@ section{
     margin: 0.8rem;
 }
 
-nav{
+nav, #contenedor-tecnologias{
     display: flex;
     justify-content: space-around;
     align-content: center;

@@ -1,5 +1,6 @@
 const contenedorProyectos = document.getElementsByClassName("contenedor-proyectos")[0]
 const botonObtenerCorreo = document.getElementById("boton-copiar-correo");
+const contenedorTecnologias = document.getElementById("contenedor-tecnologias");
 
 
 const addIcons =(tecnologias)=>{
@@ -21,6 +22,13 @@ const addIcons =(tecnologias)=>{
     return divEl.innerHTML;
 }
 
+displayTechs = (data)=>{
+    let techSet = new Set();
+    data.proyectos.map((proyecto)=> techSet.add(...proyecto.tecnologias))
+    
+    contenedorTecnologias.innerHTML = addIcons([...techSet]);
+}
+
 const displayProjects= async ()=>{//Obtener proyectos
     try{
         const response = await fetch("proyects.json")
@@ -32,7 +40,9 @@ const displayProjects= async ()=>{//Obtener proyectos
             }
             return response.json()})
         .then(data => {
+            //Añadir tecnologias
             //Mostrar los proyectos en el archivo
+            displayTechs(data);
             data.proyectos.forEach((proyecto) => {const tarjetaProyecto = document.createElement("div");
 
                 tarjetaProyecto.classList.add("proyecto");
