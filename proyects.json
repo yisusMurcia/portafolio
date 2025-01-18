@@ -15,10 +15,10 @@
             "tecnologias": ["React"]
         },
         {
-            "titulo": "Pinta cuadrados",
-            "descripcion": "Un programa para pintar cuadrados de dimensiones aleatorias al hacer click en alguna parte de la ventana",
-            "enlace": "https://github.com/yisusMurcia/dibujoDeCuadros",
-            "img": "cuadros.png",
+            "titulo": "Pinta figuras",
+            "descripcion": "Un programa para pintar diferentes figuras de dimensiones aleatorias al hacer click en alguna parte de la ventana y algunas funcionalidades más",
+            "enlace": "https://github.com/yisusMurcia/dibujoDeFiguras",
+            "img": "figures.png",
             "tecnologias": ["Java"]
         },
         {
